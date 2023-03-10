@@ -63,6 +63,8 @@ func startBattle() {
     
     while !isBattleOver {
         // Player turn
+        print("Your Health : \(playerHealth)")
+        print("Monster Health : \(monsterHealth)")
         print("Your turn")
         print("1. Attack")
         print("2. Defend")
@@ -75,6 +77,8 @@ func startBattle() {
         case "1":
             playerDamage = Int.random(in: 1...playerAttack)
             print("You dealt \(playerDamage) damage to the \(monster.name)!")
+            playerHealth -= monster.attack
+            print("Monster dealt \(monster.attack) damage to you!")
         case "2":
             print("You defend and gain 5 stamina!")
             playerStamina = min(playerStamina + 5, MAX_STAMINA)
