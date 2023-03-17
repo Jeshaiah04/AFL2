@@ -22,6 +22,7 @@ You have been chosen to embark on an epic journey as a young wizard on the path 
 
 """)
 
+//Untuk menghandle UserInput, hanya menerima pencetan return agar program terus berlanjut
 var userInput = ""
 repeat {
     print("Press [return] to continue :", terminator: "")
@@ -31,6 +32,7 @@ repeat {
 
 print("May I know your name, a young wizard?")
 
+//Hanya menerima alphabetical char, untuk input username
 var userName = ""
 while true {
     print("Enter your name (letters only):", terminator: "")
@@ -63,7 +65,7 @@ func printPlayerStats() {
     } while userInputPlayerStats != ""
 }
 
-//Function To Print HealWound
+//Function To Print HealWoundMana
 func printHealWound() {
     print("Your HP is \(hp)")
     print("Your Mana is \(mp)")
@@ -83,7 +85,7 @@ func printHealWound() {
                     print("You already have full health!")
                     print("Press [return] to go back: ")
                     let _ = readLine()
-                    break
+                    return
                 }
                 hp += 20
                 if hp > maxHp {
@@ -107,7 +109,7 @@ func printHealWound() {
                     print("You already have full mana!")
                     print("Press [return] to go back: ")
                     let _ = readLine()
-                    break
+                    return
                 }
                 mp += 50 // Elixir to add heroes mana
                 if mp > maxMp {
@@ -139,7 +141,7 @@ func printHealWound() {
     }
 }
 
-
+//Sebuah fungsi untuk mengprint display forest of troll, yang berisi algoritma bertarung
 func printForestTroll(){
     var trollHP = 500
     let trollMaxHP = 500
@@ -248,6 +250,7 @@ func printForestTroll(){
     }
 }
 
+//Sebuah fungsi untuk mengprint display mountain of golem, yang berisi algoritma bertarung
 func printMountainGolem(){
     var golemHP = 1000
     let golemMaxHP = 1000
@@ -358,6 +361,7 @@ func printMountainGolem(){
     }
 }
 
+//Selama kondisi tidak memilih case Q atau quit, maka loop akan terus berlangsung
 while true {
     print("\nFrom here, you can...\n")
     print("[C]heck your health and stats")
