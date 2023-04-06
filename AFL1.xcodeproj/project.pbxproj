@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0435915B29B17EE400FC42DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435915A29B17EE400FC42DF /* main.swift */; };
+		04F1339D29DEDB450063D28D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1339C29DEDB450063D28D /* Player.swift */; };
+		04F133A129DEF9EE0063D28D /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F133A029DEF9EE0063D28D /* Monster.swift */; };
+		04F133A329DF00EF0063D28D /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F133A229DF00EF0063D28D /* Battle.swift */; };
+		04F133A529DF01640063D28D /* Dungeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F133A429DF01640063D28D /* Dungeon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		0435915729B17EE400FC42DF /* AFL1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AFL1; sourceTree = BUILT_PRODUCTS_DIR; };
 		0435915A29B17EE400FC42DF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		04F1339C29DEDB450063D28D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		04F133A029DEF9EE0063D28D /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		04F133A229DF00EF0063D28D /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		04F133A429DF01640063D28D /* Dungeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				0435915A29B17EE400FC42DF /* main.swift */,
+				04F1339C29DEDB450063D28D /* Player.swift */,
+				04F133A029DEF9EE0063D28D /* Monster.swift */,
+				04F133A229DF00EF0063D28D /* Battle.swift */,
+				04F133A429DF01640063D28D /* Dungeon.swift */,
 			);
 			path = AFL1;
 			sourceTree = "<group>";
@@ -120,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F133A129DEF9EE0063D28D /* Monster.swift in Sources */,
 				0435915B29B17EE400FC42DF /* main.swift in Sources */,
+				04F133A529DF01640063D28D /* Dungeon.swift in Sources */,
+				04F1339D29DEDB450063D28D /* Player.swift in Sources */,
+				04F133A329DF00EF0063D28D /* Battle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
